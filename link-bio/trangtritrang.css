@@ -1,0 +1,103 @@
+/* Cài đặt phông chữ và nền */
+body {
+ background-image: url(./img/hinh-nen-cong-nghe-ban-dan_103228477.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Thẻ Bio */
+.bio-card {
+    /* Tạo nền trong suốt và hiệu ứng kính mờ */
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Viền sáng mỏng tạo cảm giác 3D */
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    
+    padding: 30px 20px;
+    border-radius: 20px;
+    
+    /* Đổ bóng nhẹ để khung nổi bật hơn */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    
+    text-align: center;
+    width: 320px;
+    
+    /* Đổi màu chữ thành trắng để dễ đọc trên nền kính */
+    color: white; 
+}
+
+/* Tăng kích thước ảnh đại diện và tạo hình tròn */
+.avatar-container {
+  width: 150px;           /* Kích thước chiều rộng của avt */
+  height: 150px;          /* Kích thước chiều cao (giữ tỉ lệ 1:1) */
+  border-radius: 50%;     /* Làm cho avt có hình tròn hoàn hảo */
+  
+  /* Cấu hình ảnh nền */
+  background-image: url(./img/Ảnh\ chụp\ màn\ hình\ 2026-07-20\ 184105.png); /* Tham chiếu đến ảnh của bạn */
+  background-size: cover;   /* Đảm bảo ảnh lấp đầy div mà không bị biến dạng */
+  background-position: center; /* Căn giữa ảnh để tập trung vào khuôn mặt */
+  background-repeat: no-repeat; /* Ngăn ảnh lặp lại */
+  
+  /* Thêm một đường viền (tùy chọn) */
+  border: 5px solid white; /* Đường viền trắng nổi bật */
+  
+  /* Thêm bóng đổ để tạo chiều sâu (tùy chọn) */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 0 auto; 
+  margin-bottom: 15px;
+}
+
+/* Nút bấm hiển thị thông tin */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Khu vực chứa link */
+.social-links {
+    display: none; /* Ẩn đi khi mới tải trang */
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Nút liên kết MXH */
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Màu sắc từng mạng xã hội */
+.fb { background-color: #1877F2; }
+.tiktok { background-color: #000000; }
+.zalo { background-color: #0068FF; }
